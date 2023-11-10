@@ -176,6 +176,7 @@ div#asdf {
   display: block;
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 80px
 }
 
 div#footer {
@@ -196,4 +197,17 @@ a[href="/"]:hover {
   background-color: #555; /* Slightly lighter color on hover */
   border-color: #777; /* Lighter border color on hover */
 }
+
+#github-icon-container {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+#github-icon-container i.fab.fa-github {
+  font-size: 30px; /* or any other size you prefer */
+  color: #ffffff; /* Adjust color if needed */
+}
+
 
