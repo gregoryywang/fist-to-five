@@ -15,6 +15,21 @@
   user-select: none;
   color: #ffffff;
 }
+
+#app-title {
+  font-family: 'Outage';
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 300%; 
+  padding-top: 20px; 
+}
+
+
 body {
   margin: 4em;
   text-align: center;
@@ -142,33 +157,36 @@ span#voteCount {
 
 a#reset-votes {
   cursor: pointer;
+  padding: 5px 10px; /* Adds padding */
+}
+
+a#reset-votes:hover {
+  background-color: #555; /* Slightly lighter color on hover */
+  border-color: #777; /* Lighter border color on hover */
 }
 
 div#asdf {
-  display: inline-block;
-  position: absolute;
-  right: 2rem;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
 }
 
-span.count {
+div#footer {
+  text-align: center;
+  bottom: 25px;
   position: absolute;
-  margin-top: 4.75rem;
-  margin-left: -3.15rem;
-  line-height: 0.75rem;
-  color: #fff;
-  text-shadow: -1px 0 1px #9e55ff, 1px 0 1px #ff3f9f, 0 0 5px #ffffff;
+  width: 100%;
 }
 
-.custom-vote-input {
-  font-size: 18px;
-  padding: 5px;
-  margin: 10px;
-  width: 180px; /* Adjust as needed */
-  background-color: #888888; /* Grey background */
-  color: #FFFFFF; /* White text color */
-  border: none; /* Optional: removes the border */
-  border-radius: 5px; /* Optional: rounds the corners */
-  margin: 0 auto; /* Center the input box */
-  display: block; /* Ensure it takes its own line */
-  text-align: center; /* Center align the text */
+a[href="/"] {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Keeps the text color consistent with your design */
+  padding: 5px 10px; /* Padding for the button */
+  cursor: pointer; /* Changes cursor to pointer */
 }
+
+a[href="/"]:hover {
+  background-color: #555; /* Slightly lighter color on hover */
+  border-color: #777; /* Lighter border color on hover */
+}
+
