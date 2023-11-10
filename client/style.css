@@ -74,11 +74,21 @@ h3#score {
   font-weight: normal;
   color: var(--label-color);
   padding: 0;
+  letter-spacing: -0.15em;
+  margin-right: 0.15em; /* offset letter spacing */
   margin: 0;
   margin-bottom: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+h3#score:before {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  content: '8.8';
+  color: rgba(255, 255, 255, 0.05);
 }
 
 h3#score span {
