@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Digital-7 Mono';
+  src: url('assets/fonts/digital-7 (mono).woff');
+}
+@font-face {
+  font-family: 'Outage';
+  src: url('assets/fonts/Outage Cut.ttf');
+}
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+}
+body {
+  margin: 4em;
+  text-align: center;
+  background-color: #000000; /* fix */
+  /* background: linear-gradient(
+    45deg,
+    rgba(70, 80, 90, 1),
+    rgba(30, 30, 40, 1) 60%
+  ); */
+  /* background: radial-gradient(
+    ellipse at bottom,
+    #1b2735 20%,
+    #090a0f 100%
+  ); */
+  background: radial-gradient(
+    ellipse at bottom,
+    #353535 25%, /* Dark gray, but not too dark */
+    #303030 75%, /* Darker gray */
+    #000000 100% /* Black at the bottom */
+  );
+  background-attachment: fixed;
+}
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+input[type='button'] {
+  font-size: 72px;
+  background: none;
+  border: 3px solid transparent;
+
+  /* border: 5px solid #aaaaaa; */
+  /* border-radius: 10px; */
+  cursor: pointer;
+  opacity: 0.25;
+  padding: 10px 15px;
+  margin: 0 15px 15px 0;
+
+  font-family: 'Digital-7 Mono', monospace;
+  font-size: 3rem;
+}
+input[type='button']:last-child {
+  margin-right: 0;
+}
+input[type='button']:hover,
+input[type='button']:focus {
+  border: 3px solid #cccccc;
+  opacity: 1;
+}
+
+h3#score {
+  position: relative;
+  font-family: 'Digital-7 Mono', monospace;
+  font-size: 7rem;
+  font-weight: normal;
+  color: var(--label-color);
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3#score span {
+  position: relative;
+  z-index: 1;
+  text-shadow: -2px 0 1px #515151, 2px 0 1px #000000, 0 0 50px #d9d9d9,
+    0 0 10px #ffffff;
+  /* text-shadow: -2px 0 1px #55efff, 2px 0 1px #ff3f9f, 0 0 50px #ffffff,
+    0 0 10px #ff3f9f; */
+  /* text-shadow: -2px -2px 2px #55efff, 2px 2px 2px #ff3f9f,
+    0 0 50px #ffffff; */
+}
+
+span.icon {
+  filter: grayscale(100%) brightness(300%);
+  -webkit-filter: grayscale(100%) brightness(300%);
+  padding-right: 0.25rem;
+}
+/* Clean up flex */
+div#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+span#users,
+span#voteCount,
+a {
+  /*fix*/
+  font-family: 'Outage';
+}
+
+/* Clean up flex */
+div#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+span#users,
+span#voteCount {
+  /*rename camelcase*/
+  font-family: 'Outage';
+}
+
+a#reset-votes {
+  cursor: pointer;
+}
+
+div#asdf {
+  display: inline-block;
+  position: absolute;
+  right: 2rem;
+}
+
+span.count {
+  position: absolute;
+  margin-top: 4.75rem;
+  margin-left: -3.15rem;
+  line-height: 0.75rem;
+  color: #fff;
+  text-shadow: -1px 0 1px #9e55ff, 1px 0 1px #ff3f9f, 0 0 5px #ffffff;
+}
+
+.custom-vote-input {
+  font-size: 18px;
+  padding: 5px;
+  margin: 10px;
+  width: 180px; /* Adjust as needed */
+  background-color: #888888; /* Grey background */
+  color: #FFFFFF; /* White text color */
+  border: none; /* Optional: removes the border */
+  border-radius: 5px; /* Optional: rounds the corners */
+  margin: 0 auto; /* Center the input box */
+  display: block; /* Ensure it takes its own line */
+  text-align: center; /* Center align the text */
+}

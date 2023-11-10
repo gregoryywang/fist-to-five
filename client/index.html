@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FistToFive</title>
+    <script
+      src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+      integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="container">
+      <!-- <div style="font-family: 'Outage'">FistToFive</div> -->
+      <h3 id="score"><span id="average">0.0</span></h3>
+      <div>
+        <input type="button" value="0" class="btn-cast" />
+        <!-- <span class="count">&bull;</span> -->
+        <input type="button" value="1" class="btn-cast" />
+        <!-- <span class="count">&bull;</span> -->
+        <input type="button" value="2" class="btn-cast" />
+        <!-- <span class="count">&bull;</span> -->
+        <input type="button" value="3" class="btn-cast" />
+        <!-- <span class="count">&bull;</span> -->
+        <input type="button" value="4" class="btn-cast" />
+        <!-- <span class="count">&bull;<br />&bull;<br />&bull;</span> -->
+        <input type="button" value="5" class="btn-cast" />
+      </div>
+      <!-- <ul id="counts">
+        &bull;
+      </ul> -->
+      <div style="bottom: 25px; position: absolute; width: 100%">
+        <span class="icon">👤</span><span id="users"></span>
+        &nbsp; &nbsp; &nbsp;
+        <span class="icon">✨</span><span id="voteCount"></span>
+        <div id="asdf">
+          <!-- <span class="icon" id="reset-votes" title="clear votes"
+            >&#10227;</span
+          >
+          |
+          <span title="new room"><a href="/">&#10697;</a></span> -->
+          <!-- fix as span on anchor ? -->
+          <a id="reset-votes" title="clear votes">Clear votes</a>
+          |
+          <a href="/" title="new room">New room</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
