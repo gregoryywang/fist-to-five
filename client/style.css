@@ -118,10 +118,6 @@ h3#score span {
   z-index: 1;
   text-shadow: -2px 0 1px #515151, 2px 0 1px #000000, 0 0 50px #d9d9d9,
     0 0 10px #ffffff;
-  /* text-shadow: -2px 0 1px #55efff, 2px 0 1px #ff3f9f, 0 0 50px #ffffff,
-    0 0 10px #ff3f9f; */
-  /* text-shadow: -2px -2px 2px #55efff, 2px 2px 2px #ff3f9f,
-    0 0 50px #ffffff; */
 }
 
 span.icon {
@@ -176,7 +172,7 @@ div#asdf {
   display: block;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 80px
+  margin-bottom: 60px
 }
 
 div#footer {
