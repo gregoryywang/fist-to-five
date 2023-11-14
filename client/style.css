@@ -206,4 +206,8 @@ a[href="/"]:hover {
   color: #ffffff; /* Adjust color if needed */
 }
 
+.label {
+  font-family: 'Outage';
+}
+
 
