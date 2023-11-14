@@ -194,15 +194,21 @@ a[href="/"]:hover {
   border-color: #777; /* Lighter border color on hover */
 }
 
-#github-icon-container {
+#icons-container {
   position: absolute;
   bottom: 10px;
   width: 100%;
   text-align: center;
 }
 
-#github-icon-container i.fab.fa-github {
-  font-size: 30px; /* or any other size you prefer */
+#github-icon-container, #info-icon-container {
+  display: inline-block; /* Display icons side-by-side */
+  margin: 0 5px; /* Spacing between icons */
+}
+
+#github-icon-container i.fab.fa-github,
+#info-icon-container i.fa-solid.fa-circle-question {
+  font-size: 30px; /* Adjust size as needed */
   color: #ffffff; /* Adjust color if needed */
 }
 
