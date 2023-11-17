@@ -1,7 +1,7 @@
 {
-  "name": "story-point",
+  "name": "fist-to-five",
   "version": "1.0.0",
-  "description": "A simple pointing poker webapp",
+  "description": "A simple fist to five webapp",
   "scripts": {
     "start": "nodemon app.js"
   },
